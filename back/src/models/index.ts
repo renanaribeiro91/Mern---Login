@@ -1,7 +1,7 @@
-import { Schema, model } from "mongoose ";
+import mongoose from "mongoose";
 import bcrypt from "bcrypt";
 
-const userSchema = Schema(
+const userSchema = mongoose.Schema(
   {
     name: {
       type: String,
@@ -28,6 +28,6 @@ userSchema.pre("save", function (next) {
   this.password = bcrypt.hashSync(this.password, 10);
 });
 
-const userModel = model("User", userSchema);
+const userModel = mongoose.model("User", userSchema);
 
 export default userModel;

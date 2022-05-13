@@ -1,15 +1,13 @@
 import userSchema from "../models";
 
-export default {
-  findAllUsers() {
-    return userSchema.find();
-  },
+export const findAllUsers = async () => {
+  return await userSchema.find();
+};
 
-  findOneUsers(id: string) {
-    return userSchema.findById(id);
-  },
+export const findOneUsers = async () => {
+  return await userSchema.findById(id);
+};
 
-  createUsers(body) {
-    return userSchema.create(body);
-  },
+export const createUsers = async (body) => {
+  return await userSchema.create(body);
 };
