@@ -1,7 +1,7 @@
 import { Painel } from "../pages/client/painel";
 import { Home } from "../pages/client/home";
 import { ProductsDetails } from "../pages/client/productsDetails";
-import { DashBoard } from "../pages/admin/dashboard";
+import { Dashboard } from "../pages/admin/dashboard";
 import { ProductsCadastrar } from "../pages/admin/products/cadastro";
 import { ProductsEdit } from "../pages/admin/products/edit";
 import { ProductsList } from "../pages/admin/products/list";
@@ -13,7 +13,7 @@ export {
   Painel,
   Home,
   ProductsDetails,
-  DashBoard,
+  Dashboard,
   ProductsCadastrar,
   ProductsEdit,
   ProductsList,

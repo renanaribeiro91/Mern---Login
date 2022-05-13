@@ -3,7 +3,7 @@ import {
   Painel,
   Home,
   ProductsDetails,
-  DashBoard,
+  Dashboard,
   ProductsCadastrar,
   ProductsEdit,
   ProductsList,
@@ -20,7 +20,7 @@ export const RoutesApp = () => {
       <Route path="/products/:id" element={<ProductsDetails />} />
 
       {/* Rota Admin */}
-      <Route path="/admin" element={<DashBoard />} />
+      <Route path="/admin" element={<Dashboard />} />
 
       {/* <Route path="/" element={<Painel />} /> */}
 
