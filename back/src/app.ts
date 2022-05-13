@@ -4,7 +4,7 @@ import { routes } from "./routes";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import { connection } from "./db";
-// import "./modules";
+import "./modules";
 // import { logger } from "./utils/logger";
 
 const app = express();
