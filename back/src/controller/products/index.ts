@@ -5,7 +5,7 @@ import {
   createProducts,
   removeProducts,
   updateProducts,
-} from "../../repository";
+} from "../../repository/products";
 
 export const findAllProductsController = async (
   req: Request,

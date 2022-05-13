@@ -4,16 +4,16 @@ import {
   findOneUsersController,
   createUsersController,
   removeUsersController,
-  updateUsersController
-} from "../controller/user";
+  updateUsersController,
+} from "../../controller/user";
 
-export const routes = Router();
+export const routesUser = Router();
 
-routes.get("/hello", (req: Request, res: Response) => {
+routesUser.get("/hello", (req: Request, res: Response) => {
   return res.status(200).send({ msg: "Hello!" });
 });
 
-routes.get("/api", findAllUsersController);
-routes.get("/api/details/:id", findOneUsersController);
-routes.delete("/api/:id", removeUsersController);
-routes.post("/api", createUsersController);
+routesUser.get("/api", findAllUsersController);
+routesUser.get("/api/details/:id", findOneUsersController);
+routesUser.delete("/api/:id", removeUsersController);
+routesUser.post("/api", createUsersController);

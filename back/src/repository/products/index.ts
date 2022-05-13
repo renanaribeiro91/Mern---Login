@@ -1,4 +1,4 @@
-import Productschema from "../models";
+import Productschema from "../../models/products";
 
 export const findAllProducts = async () => {
   return await Productschema.find();
