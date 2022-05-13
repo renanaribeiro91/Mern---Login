@@ -26,6 +26,17 @@ userSchema.pre("save", function (next) {
     return next();
   }
   this.password = bcrypt.hashSync(this.password, 10);
+  next();
+});
+
+userSchema.pre("findOneAndUpdate", function (next) {
+  var passwords = this.getUpdate().password;
+  if (passwords.length < 55) {
+    this.getUpdate().password = bcript.hashSync(passwords, 10);
+    return next();
+  }
+  this.password = bcrypt.hashSync(this.password, 10);
+  next();
 });
 
 const userModel = mongoose.model("User", userSchema);
