@@ -1,4 +1,4 @@
-import userSchema from "../models";
+import userSchema from "../../models/user";
 
 export const findAllUsers = async () => {
   return await userSchema.find();

@@ -5,7 +5,7 @@ import {
   createUsers,
   removeUsers,
   updateUsers,
-} from "../../repository";
+} from "../../repository/user";
 
 export const findAllUsersController = async (req: Request, res: Response) => {
   try {
